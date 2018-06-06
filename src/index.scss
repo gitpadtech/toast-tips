@@ -1,0 +1,21 @@
+.toast-tips-container {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  padding: 0 10px;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.toast-tips {
+  background: rgba(0, 0, 0, .6);
+  color: white;
+  padding: 2px 15px;
+  border-radius: 4px;
+  min-width: 100px;
+  text-align: center;
+  transition: opacity .25s;
+}
