@@ -16,12 +16,12 @@ export default function toastTips(tips) {
   document.body.appendChild($c);
   $c.style.top = `${height / 2 - $toast.clientHeight / 2}px`;
 
-  $toast.style.opacity = 0;
   setTimeout(() => {
-    $toast.style.opacity = 1;
+    $toast.classList.add('fade-in');
   }, 0);
   setTimeout(() => {
-    $toast.style.opacity = 0;
+    $toast.classList.remove('fade-in');
+    $toast.classList.add('fade-out');
   }, 2000);
   setTimeout(() => {
     document.body.removeChild($c);
