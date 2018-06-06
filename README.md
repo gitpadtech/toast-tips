@@ -13,7 +13,7 @@ npm i @gitpad/toast-tips
 
 ```js
 // import css somewhere only once
-import '@gitpad/toast-tips/dist/toast-tips.css/';
+import '@gitpad/toast-tips/dist/toast-tips.css';
 
 import toastTips from '@gitpad/toast-tips';
 
