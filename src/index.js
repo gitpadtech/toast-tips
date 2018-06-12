@@ -12,7 +12,7 @@ export default function toastTips(tips) {
   $toast.classList.add('start');
   $toast.innerText = tips;
   $c.appendChild($toast);
-  let height = document.documentElement.clientHeight;
+  let height = window.innerHeight;
   document.body.appendChild($c);
   $c.style.top = `${height / 2 - $toast.clientHeight / 2}px`;
 
